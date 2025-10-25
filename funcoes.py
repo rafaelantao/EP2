@@ -9,3 +9,11 @@ def define_posicoes(linha, coluna, orientacao, tamanho):
         if orientacao == 'horizontal':
             coluna += 1
     return posicao
+
+def preenche_frota(frota, navio, linha, coluna, orientacao, tamanho):
+    posicao = define_posicoes(linha, coluna, orientacao, tamanho)
+    if navio in frota:
+        frota[navio].append(posicao)
+    else:
+        frota[navio] = [posicao]
+    return frota
