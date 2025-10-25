@@ -43,4 +43,4 @@ def posiciona_frota(frota):
             for linha, coluna in navio:
                 tabuleiro[linha][coluna] = 1
 
-    return tabuleiro
+    return tabuleiro
